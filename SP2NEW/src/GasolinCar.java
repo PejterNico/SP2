@@ -1,5 +1,6 @@
 public class GasolinCar extends AFuelCar {
 
+    ////Constructor for the GasolineCar class
     public GasolinCar(String registrationNumber, String make, String model, int numberOfDoors, double kmPrLitre) {
         super(registrationNumber, make, model, numberOfDoors, kmPrLitre);
     }
@@ -8,6 +9,7 @@ public class GasolinCar extends AFuelCar {
         return "Gasoline car";
     }
 
+    //// Method that calculates the fee depending on the kmPrLiter
     public double getRegistrationFee(){
         double kmPrLitre = getKmPrLitre();
         if (kmPrLitre >= 20 && kmPrLitre <= 50) {

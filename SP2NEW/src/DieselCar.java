@@ -1,6 +1,9 @@
 public class DieselCar extends AFuelCar {
+
+    //// Attribute for the AFuelCar class
     private boolean hasParticleFilter;
 
+    ////Constructor for the DieselCar class
     public DieselCar(String registrationNumber, String make, String model, int numberOfDoors, double kmPrLiter, boolean hasParticleFilter) {
         super(registrationNumber, make, model, numberOfDoors, kmPrLiter);
         this.hasParticleFilter = hasParticleFilter;
@@ -16,6 +19,7 @@ public class DieselCar extends AFuelCar {
         return "Diesel car";
     }
 
+    //// Method that calculates the fee depending on the kmPrLiter
     public double getRegistrationFee() {
         double kmPrLiter = getKmPrLitre();
         boolean partikel = hasParticleFilter();
