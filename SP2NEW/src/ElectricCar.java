@@ -36,7 +36,7 @@ public class ElectricCar extends ACar {
     //// Method that calculates the fee depending on the kmPrLiter
     public double getRegistrationFee() {
         double whPrKm = getWhPrKm();
-        if (whPrKm >= 20 && whPrKm <= 50) {
+        if (whPrKm >= 20 ) {
             return 330;
         } else if (whPrKm >= 15 && whPrKm <= 20) {
             return 1050;
